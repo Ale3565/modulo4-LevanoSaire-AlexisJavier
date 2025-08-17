@@ -34,8 +34,9 @@ Antes de ejecutar el proyecto, asegúrate de tener instalado:
 
 # Si tienes el proyecto en un repositorio
 
-git clone <url-del-repositorio>
-cd Actividad4
+git clone https://github.com/Ale3565/modulo4-LevanoSaire-AlexisJavier.git
+
+cd modulo4-LevanoSaire-AlexisJavier
 
 ### 2. Instalar dependencias
 
