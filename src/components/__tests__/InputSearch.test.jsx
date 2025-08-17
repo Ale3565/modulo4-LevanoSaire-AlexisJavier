@@ -13,7 +13,6 @@ describe('InputSearch Component', () => {
     const input = screen.getByPlaceholderText('Input a dimension number from 1 to 126');
     const form = input.closest('form');
 
-    // Prueba número válido
     fireEvent.change(input, { target: { value: '50' } });
     fireEvent.submit(form);
     expect(mockSetSearchLocation).toHaveBeenCalledWith(50);

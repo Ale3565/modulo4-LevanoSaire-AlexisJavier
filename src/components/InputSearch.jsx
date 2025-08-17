@@ -4,7 +4,6 @@ const InputSearch = ({ setSearchLocation }) => {
     const input = e.target.firstChild;
     const value = parseInt(input.value);
 
-    // Validación del rango
     if (isNaN(value) || value < 1 || value > 126) {
       input.style.borderColor = 'red';
       input.setCustomValidity('Por favor ingrese un número entre 1 y 126');
@@ -15,7 +14,7 @@ const InputSearch = ({ setSearchLocation }) => {
     input.style.borderColor = '#cbde5d';
     input.setCustomValidity('');
     setSearchLocation(value);
-    input.value = ''; // Limpiar el campo después de una búsqueda exitosa
+    input.value = '';
   };
 
   const handleInput = (e) => {
@@ -34,8 +33,8 @@ const InputSearch = ({ setSearchLocation }) => {
 
   return (
     <form onSubmit={searchLocation} className="input">
-      <input 
-        type="text" 
+      <input
+        type="text"
         placeholder="Input a dimension number from 1 to 126"
         onInput={handleInput}
       />

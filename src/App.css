@@ -114,7 +114,7 @@ body {
 }
 .status {
   background-color: #cbde5d;
-  /* margin-left: 0px !important;  */
+
   margin-right: 85px !important;
   border-radius: 0px 10px 10px 0px;
 }
@@ -146,7 +146,6 @@ body {
   font-size: 22px;
 }
 
-/* Spinner */
 .lds-ripple {
   display: inline-block;
   position: relative;
@@ -194,7 +193,6 @@ body {
     opacity: 0;
   }
 }
-/*  */
 
 @media (max-width: 660px) {
   .location h2 {
